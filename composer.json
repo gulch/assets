@@ -1,6 +1,6 @@
 {
     "name": "gulch/assets",
-    "description": "A fast and intuitive dependency injection container.",
+    "description": "Package for gathering some type of assets (js, css) and write once into document.",
     "keywords": [
         "assets",
         "script",

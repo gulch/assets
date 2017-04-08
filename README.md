@@ -1,5 +1,5 @@
 # Assets
-Package for gathering some type of assets (js, css) and write once into document.
+PHP Package for gathering some type of assets (js, css) and write once into document.
 
 ## Install
 
