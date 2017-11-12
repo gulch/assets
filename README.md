@@ -17,7 +17,7 @@ Add to your **composer.json** file this git repo
 and add to **require** section
 ```bash
 "require": {
-    "gulch/assets": "dev-master"
+    "gulch/assets": "^0.1"
 }
 ```
 and finally run
