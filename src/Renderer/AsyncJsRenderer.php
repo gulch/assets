@@ -9,7 +9,7 @@ class AsyncJsRenderer implements RendererInterface
         $result = '';
 
         foreach ($assets as $asset) {
-            $result .= "<script async src='{$asset}'></script>";
+            $result .= '<script async src="' . $asset . '"></script>';
         }
 
         return $result;

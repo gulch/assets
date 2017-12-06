@@ -9,7 +9,7 @@ class PreloadJsRenderer implements RendererInterface
         $result = '';
 
         foreach ($assets as $asset) {
-            $result .= "<link rel='preload' href='{$asset}' as='script'>";
+            $result .= '<link rel="preload" href="' . $asset . '" as="script">';
         }
 
         return $result;

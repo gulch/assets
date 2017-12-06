@@ -9,7 +9,7 @@ class BodyCssRenderer implements RendererInterface
         $result = '';
 
         foreach ($assets as $asset) {
-            $result .= "<link href='{$asset}' rel='stylesheet' type='text/css' property='stylesheet'>";
+            $result .= '<link href="' . $asset . '" rel="stylesheet" type="text/css" property="stylesheet">';
         }
 
         return $result;

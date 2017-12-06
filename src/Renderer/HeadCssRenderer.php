@@ -9,7 +9,7 @@ class HeadCssRenderer implements RendererInterface
         $result = '';
 
         foreach ($assets as $asset) {
-            $result .= "<link href='{$asset}' rel='stylesheet' type='text/css'>";
+            $result .= '<link href="' . $asset . '" rel="stylesheet" type="text/css">';
         }
 
         return $result;

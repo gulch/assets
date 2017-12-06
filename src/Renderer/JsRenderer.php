@@ -9,7 +9,7 @@ class JsRenderer implements RendererInterface
         $result = '';
 
         foreach ($assets as $asset) {
-            $result .= "<script src='{$asset}'></script>";
+            $result .= '<script src="' . $asset . '"></script>';
         }
 
         return $result;

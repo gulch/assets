@@ -9,7 +9,7 @@ class PreloadCssRenderer implements RendererInterface
         $result = '';
 
         foreach ($assets as $asset) {
-            $result .= "<link rel='preload' href='{$asset}' as='style'>";
+            $result .= '<link rel="preload" href="' . $asset . '" as="style">';
         }
 
         return $result;

@@ -9,7 +9,7 @@ class DeferJsRenderer implements RendererInterface
         $result = '';
 
         foreach ($assets as $asset) {
-            $result .= "<script defer src='{$asset}'></script>";
+            $result .= '<script defer src="' . $asset . '"></script>';
         }
 
         return $result;

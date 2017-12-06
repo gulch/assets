@@ -14,14 +14,14 @@ class Asset
         $this->renderer = $renderer;
     }
 
-    public function add(string $asset): Asset
+    public function add(string $asset): self
     {
         $this->assets[] = $asset;
 
         return $this;
     }
 
-    public function write()
+    public function write(): string
     {
         return $this->renderer->render($this->assets);
     }
