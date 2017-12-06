@@ -10,14 +10,14 @@ Add to your **composer.json** file this git repo
 "repositories":[
     {
 	    "type": "git",
-	    "url": "http://github.com/gulch/assets"
+        "url": "http://github.com/gulch/assets"
     }
 ]
 ```
 and add to **require** section
 ```bash
 "require": {
-    "gulch/assets": "^0.1"
+    "gulch/assets": "^0.2"
 }
 ```
 and finally run
