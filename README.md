@@ -1,30 +1,17 @@
-# Assets
+[![Build Status](https://travis-ci.org/gulch/assets.svg?branch=master)](https://travis-ci.org/gulch/assets)
+
+# gulch/Assets
 PHP Package for gathering some type of assets (js, css) and write once into document.
 
 ## Install
 
 You will need [Composer](http://getcomposer.org) installed.
+```bash
+composer require gulch/assets
+```
 
-Add to your **composer.json** file this git repo
-```bash
-"repositories":[
-    {
-	    "type": "git",
-        "url": "http://github.com/gulch/assets"
-    }
-]
-```
-and add to **require** section
-```bash
-"require": {
-    "gulch/assets": "^0.2"
-}
-```
-and finally run
-```bash
-composer update
-```
 ## How to use
+
 ```php
 use gulch\Assets\Asset;
 use gulch\Assets\Renderer\BodyCssRenderer;
