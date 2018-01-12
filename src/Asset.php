@@ -2,11 +2,13 @@
 
 namespace gulch\Assets;
 
-use gulch\Assets\Renderer\RendererInterface;
+use gulch\Assets\Contract\RendererInterface;
 
 class Asset
 {
+    /** @var RendererInterface */
     private $renderer;
+    /** @var array */
     private $assets = [];
 
     public function __construct(RendererInterface $renderer)

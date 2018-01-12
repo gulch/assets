@@ -2,6 +2,8 @@
 
 namespace gulch\Assets\Renderer;
 
+use gulch\Assets\Contract\RendererInterface;
+
 class DeferJsRenderer implements RendererInterface
 {
     public function render(array $assets): string

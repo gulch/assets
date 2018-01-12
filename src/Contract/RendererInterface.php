@@ -1,6 +1,6 @@
 <?php
 
-namespace gulch\Assets\Renderer;
+namespace gulch\Assets\Contract;
 
 interface RendererInterface
 {

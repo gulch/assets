@@ -2,6 +2,8 @@
 
 namespace gulch\Assets\Renderer;
 
+use gulch\Assets\Contract\RendererInterface;
+
 class BodyCssRenderer implements RendererInterface
 {
     public function render(array $assets): string
