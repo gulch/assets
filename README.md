@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/gulch/assets.svg?branch=master)](https://travis-ci.org/gulch/assets)
+[![Build Status](https://travis-ci.org/gulch/assets.svg?branch=master)](https://travis-ci.org/gulch/assets) [![Coverage Status](https://coveralls.io/repos/github/gulch/assets/badge.svg?branch=master)](https://coveralls.io/github/gulch/assets?branch=master)
 
 # gulch/Assets
 PHP Package for gathering some type of assets (js, css) and write once into document.
