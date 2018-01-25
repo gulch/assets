@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/gulch/assets.svg?branch=master)](https://travis-ci.org/gulch/assets) [![Coverage Status](https://coveralls.io/repos/github/gulch/assets/badge.svg?branch=master)](https://coveralls.io/github/gulch/assets?branch=master)
+[![Build Status](https://travis-ci.org/gulch/assets.svg?branch=master)](https://travis-ci.org/gulch/assets)
+[![Coverage Status](https://coveralls.io/repos/github/gulch/assets/badge.svg?branch=master)](https://coveralls.io/github/gulch/assets?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gulch/assets/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gulch/assets/?branch=master)
 
 # gulch/Assets
 PHP Package for gathering some type of assets (js, css) and write once into document.
