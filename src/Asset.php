@@ -8,6 +8,7 @@ class Asset
 {
     /** @var RendererInterface */
     private $renderer;
+
     /** @var array */
     private $assets = [];
 
@@ -18,7 +19,9 @@ class Asset
 
     public function add(string $asset): self
     {
-        $this->assets[] = $asset;
+        if (!$this->isExists($asset)) {
+            $this->assets[] = $asset;
+        }
 
         return $this;
     }
@@ -31,5 +34,10 @@ class Asset
     public function __toString()
     {
         return $this->write();
+    }
+
+    private function isExists(string $asset): bool
+    {
+        return \in_array($asset, $this->assets, true);
     }
 }
