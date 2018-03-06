@@ -2,18 +2,7 @@
 
 namespace gulch\Assets\Renderer;
 
-use gulch\Assets\Contract\RendererInterface;
-
-class AsyncJsRenderer implements RendererInterface
+class AsyncJsRenderer extends GeneralRenderer
 {
-    public function render(array $assets): string
-    {
-        $result = '';
-
-        foreach ($assets as $asset) {
-            $result .= '<script async src="' . $asset . '"></script>';
-        }
-
-        return $result;
-    }
+    protected const PATTERN = '<script async src="%1$s"></script>';
 }

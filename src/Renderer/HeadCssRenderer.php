@@ -2,18 +2,7 @@
 
 namespace gulch\Assets\Renderer;
 
-use gulch\Assets\Contract\RendererInterface;
-
-class HeadCssRenderer implements RendererInterface
+class HeadCssRenderer extends GeneralRenderer
 {
-    public function render(array $assets): string
-    {
-        $result = '';
-
-        foreach ($assets as $asset) {
-            $result .= '<link href="' . $asset . '" rel="stylesheet" type="text/css">';
-        }
-
-        return $result;
-    }
+    protected const PATTERN = '<link href="%1$s" rel="stylesheet" type="text/css">';
 }

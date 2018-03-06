@@ -2,18 +2,7 @@
 
 namespace gulch\Assets\Renderer;
 
-use gulch\Assets\Contract\RendererInterface;
-
-class PreloadCssRenderer implements RendererInterface
+class PreloadCssRenderer extends GeneralRenderer
 {
-    public function render(array $assets): string
-    {
-        $result = '';
-
-        foreach ($assets as $asset) {
-            $result .= '<link rel="preload" href="' . $asset . '" as="style">';
-        }
-
-        return $result;
-    }
+    protected const PATTERN = '<link rel="preload" href="%1$s" as="style">';
 }

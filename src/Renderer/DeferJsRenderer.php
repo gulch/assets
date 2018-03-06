@@ -2,18 +2,7 @@
 
 namespace gulch\Assets\Renderer;
 
-use gulch\Assets\Contract\RendererInterface;
-
-class DeferJsRenderer implements RendererInterface
+class DeferJsRenderer extends GeneralRenderer
 {
-    public function render(array $assets): string
-    {
-        $result = '';
-
-        foreach ($assets as $asset) {
-            $result .= '<script defer src="' . $asset . '"></script>';
-        }
-
-        return $result;
-    }
+    protected const PATTERN = '<script defer src="%1$s"></script>';
 }

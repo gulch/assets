@@ -2,18 +2,7 @@
 
 namespace gulch\Assets\Renderer;
 
-use gulch\Assets\Contract\RendererInterface;
-
-class PreloadWoff2Renderer implements RendererInterface
+class PreloadWoff2Renderer extends GeneralRenderer
 {
-    public function render(array $assets): string
-    {
-        $result = '';
-
-        foreach ($assets as $asset) {
-            $result .= '<link rel="preload" href="' . $asset . '" as="font" type="font/woff2">';
-        }
-
-        return $result;
-    }
+    protected const PATTERN = '<link rel="preload" href="%1$s" as="font" type="font/woff2">';
 }

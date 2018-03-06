@@ -2,18 +2,7 @@
 
 namespace gulch\Assets\Renderer;
 
-use gulch\Assets\Contract\RendererInterface;
-
-class JsRenderer implements RendererInterface
+class JsRenderer extends GeneralRenderer
 {
-    public function render(array $assets): string
-    {
-        $result = '';
-
-        foreach ($assets as $asset) {
-            $result .= '<script src="' . $asset . '"></script>';
-        }
-
-        return $result;
-    }
+    protected const PATTERN = '<script src="%1$s"></script>';
 }
